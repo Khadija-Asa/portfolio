@@ -1,11 +1,26 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './components/Home';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
-    <h1>
-      je suis glory
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laborum cumque, ipsam tenetur architecto molestiae? Corrupti cumque tempore animi inventore ad? Dolor ad sapiente ipsam culpa laboriosam ea accusamus a!
-    </h1>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+
+        <Route path="/" element={<Home />}/>
+        <Route path="/services" element={<Services />}/>
+        <Route path='/portfolio' element={<Portfolio />}/>
+        <Route path='/contact' element={<Contact />}/>
+        <Route path="*" element={<NotFound />}/>
+
+      </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -1,3 +1,18 @@
+/* Global settings */
+
+/* Fonts */
+@font-face {
+  font-family: 'Glory';
+  src: url(./../fonts/Glory/Glory-VariableFont_wght.ttf);
+}
+
+/* Colors */
+:root {
+  --Green: #1A6449;
+  --Light-Gray: #ECECEC;
+  --Dark-Gray: #585858;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -22,8 +37,10 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+a, li, ul {
   list-style: none;
+  text-decoration: none;
 }
 
 /* Set core root defaults */
@@ -73,19 +90,4 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* Global settings */
-
-/* Fonts */
-@font-face {
-  font-family: 'Glory';
-  src: url(./../fonts/Glory/Glory-VariableFont_wght.ttf);
-}
-
-/* Colors */
-:root {
-  --Green: #1A6449;
-  --Light-Gray: #ECECEC;
-  --Dark-Gray: #585858;
 }
