@@ -1,16 +1,24 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import logo from './../assets/illustrations/icon-logo.png'
+import './../styles/header.css';
+
+// Icons
+import { IconHome, IconLicense, IconBriefcase, IconSend } from '@tabler/icons';
 
 const Header = () => {
   return (
-    <nav className='navbar'>
+    <section>
 
+      <div className="navbar-logo">
         <NavLink to="/">
-          <img className='navbar-logo' src={logo} alt="Logo Space Tourism" />
+          <span>khadidja ait si ali</span>
         </NavLink>
         <span className="navbar-line"></span>
+      </div>
 
+      {/* Menu for tablet/desktop */}
+      <nav className='navbar'>
         <ul className='navbar-links'>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/">
@@ -33,8 +41,35 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-
       </nav>
+
+      {/* Menu for mobile */}
+      <nav className='navbar-mobile'>
+        <ul className='navbar-links'>
+          <li className='navbar-item'>
+            <NavLink className='navbar-link' to="/">
+              <IconHome color='#1A6449' stroke={1.75}/>
+            </NavLink>
+          </li>
+          <li className='navbar-item'>
+            <NavLink className='navbar-link' to="/services">
+            <IconLicense color='#1A6449' stroke={1.75}/>
+            </NavLink>
+          </li>
+          <li className='navbar-item'>
+            <NavLink className='navbar-link' to="/portfolio">
+            <IconBriefcase color='#1A6449' stroke={1.75}/>
+            </NavLink>
+          </li>
+          <li className='navbar-item'>
+            <NavLink className='navbar-link' to="/contact">
+            <IconSend color='#1A6449' stroke={1.75}/>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
+    </section>      
   );
 };
 

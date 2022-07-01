@@ -18,6 +18,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */
@@ -53,12 +55,7 @@ body {
   font-family: 'Glory';
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+  line-height: 1;
 }
 
 /* Make images easier to work with */
@@ -90,4 +87,15 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Background colors */
+.home,
+.portfolio {
+  background-color: var(--Light-Gray);
+}
+
+.services,
+.contact {
+  background-color: var(--Dark-Gray);
 }

@@ -1,0 +1,25 @@
+/* Removing large size menu */
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Mobile */
+.navbar-mobile {
+  bottom: 0;
+  position: fixed;
+  min-width: 100%;
+}
+
+.navbar-links {
+  box-shadow: 0 .5rem 1rem 
+            rgba(0,0,0,.15);
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+/* .icon-tabler:hover {
+} */
