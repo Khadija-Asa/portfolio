@@ -5,6 +5,11 @@
   }
 }
 
+/* Name - Logo */
+.navbar-logo {
+  position: absolute;
+}
+
 /* Mobile */
 .navbar-mobile {
   bottom: 0;
@@ -13,13 +18,20 @@
 }
 
 .navbar-links {
+  background-color: var(--Light-Gray);
   box-shadow: 0 .5rem 1rem 
             rgba(0,0,0,.15);
+  border-radius: .5rem .5rem 0 0;
   display: flex;
-  font-size: 1.7rem;
   justify-content: space-around;
   padding: 1rem 0;
 }
 
-/* .icon-tabler:hover {
-} */
+.navbar-link {
+  align-items: center;
+  display: flex;
+}
+
+.icon-tabler {
+  color: #1A6449;
+}

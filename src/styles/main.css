@@ -93,9 +93,11 @@ select {
 .home,
 .portfolio {
   background-color: var(--Light-Gray);
+  min-height: 100vh;
 }
 
 .services,
 .contact {
   background-color: var(--Dark-Gray);
+  min-height: 100vh;
 }

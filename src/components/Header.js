@@ -48,22 +48,22 @@ const Header = () => {
         <ul className='navbar-links'>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/">
-              <IconHome color='#1A6449' stroke={1.75}/>
+              <IconHome stroke={1.75}/>
             </NavLink>
           </li>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/services">
-            <IconLicense color='#1A6449' stroke={1.75}/>
+            <IconLicense stroke={1.75}/>
             </NavLink>
           </li>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/portfolio">
-            <IconBriefcase color='#1A6449' stroke={1.75}/>
+            <IconBriefcase stroke={1.75}/>
             </NavLink>
           </li>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/contact">
-            <IconSend color='#1A6449' stroke={1.75}/>
+            <IconSend stroke={1.75}/>
             </NavLink>
           </li>
         </ul>
