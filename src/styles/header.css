@@ -7,17 +7,24 @@
 
 /* Name - Logo */
 .navbar-logo {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  gap: 1rem;
+  margin: 1rem 1.2rem 0 1.2rem;
   position: absolute;
+  top: 0;
+}
+
+.navbar-logo img {
+  width: 40px;
 }
 
 /* Mobile */
-.navbar-mobile {
+.navbar-links {
   bottom: 0;
   position: fixed;
   min-width: 100%;
-}
-
-.navbar-links {
   background-color: var(--Light-Gray);
   box-shadow: 0 .5rem 1rem 
             rgba(0,0,0,.15);
@@ -33,5 +40,5 @@
 }
 
 .icon-tabler {
-  color: #1A6449;
+  color: var(--Green);
 }

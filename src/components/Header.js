@@ -10,15 +10,14 @@ const Header = () => {
   return (
     <section>
 
-      <div className="navbar-logo">
-        <NavLink to="/">
-          <span>khadidja ait si ali</span>
-        </NavLink>
-        <span className="navbar-line"></span>
-      </div>
 
       {/* Menu for tablet/desktop */}
       <nav className='navbar'>
+
+        <NavLink className="navbar-logo" to="/">
+          <img src={logo} alt="Logo Khadidja A." />
+        </NavLink>
+
         <ul className='navbar-links'>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/">
@@ -41,10 +40,16 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
+
       </nav>
 
       {/* Menu for mobile */}
       <nav className='navbar-mobile'>
+
+        <NavLink className="navbar-logo" to="/">
+          <img src={logo} alt="Logo Khadidja A." />
+        </NavLink>
+
         <ul className='navbar-links'>
           <li className='navbar-item'>
             <NavLink className='navbar-link' to="/">
@@ -67,6 +72,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
+
       </nav>
 
     </section>      

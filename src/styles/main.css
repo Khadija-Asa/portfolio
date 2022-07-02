@@ -32,7 +32,8 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+a {
   margin: 0;
   padding: 0;
 }
@@ -100,4 +101,30 @@ select {
 .contact {
   background-color: var(--Dark-Gray);
   min-height: 100vh;
+}
+
+/* Padding components */
+.home,
+.services,
+.portfolio,
+.contact {
+  padding: 7rem 1.3rem 0 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .home,
+  .services,
+  .portfolio,
+  .contact {
+    padding: 241px 24px 0 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home,
+  .services,
+  .portfolio,
+  .contact {
+    padding: 370px 0 0 0;
+  }
 }
