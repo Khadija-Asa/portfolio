@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from './../assets/illustrations/icon-logo.png'
 import './../styles/header.css';
 
@@ -9,7 +9,6 @@ import { IconHome, IconLicense, IconBriefcase, IconSend } from '@tabler/icons';
 const Header = () => {
   return (
     <section>
-
 
       {/* Menu for tablet/desktop */}
       <nav className='navbar'>
@@ -46,9 +45,11 @@ const Header = () => {
       {/* Menu for mobile */}
       <nav className='navbar-mobile'>
 
-        <NavLink className="navbar-logo" to="/">
-          <img src={logo} alt="Logo Khadidja A." />
-        </NavLink>
+        <div className="navbar-logo">
+          <NavLink to="/">
+            <img src={logo} alt="Logo Khadidja A." />
+          </NavLink>
+        </div>
 
         <ul className='navbar-links'>
           <li className='navbar-item'>

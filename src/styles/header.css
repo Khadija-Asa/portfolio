@@ -6,14 +6,13 @@
 }
 
 /* Name - Logo */
-.navbar-logo {
+.navbar-mobile .navbar-logo {
   align-items: center;
+  background-color: #F8F9FA;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
-  font-size: 1rem;
-  gap: 1rem;
-  margin: 1rem 1.2rem 0 1.2rem;
-  position: absolute;
-  top: 0;
+  padding: .5rem 1.2rem;
+  position: relative;
 }
 
 .navbar-logo img {
@@ -25,9 +24,8 @@
   bottom: 0;
   position: fixed;
   min-width: 100%;
-  background-color: var(--Light-Gray);
-  box-shadow: 0 .5rem 1rem 
-            rgba(0,0,0,.15);
+  background-color: #F8F9FA;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: .5rem .5rem 0 0;
   display: flex;
   justify-content: space-around;

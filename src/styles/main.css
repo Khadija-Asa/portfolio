@@ -3,14 +3,24 @@
 /* Fonts */
 @font-face {
   font-family: 'Glory';
-  src: url(./../fonts/Glory/Glory-VariableFont_wght.ttf);
+  src: url(./../fonts/Glory/Glory-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Reem Kufi';
+  src: url(./../fonts/Reem_Kufi/ReemKufi-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Bahiana';
+  src: url(./../fonts/Bahiana/Bahiana-Regular.ttf);
 }
 
 /* Colors */
 :root {
   --Green: #1A6449;
-  --Light-Gray: #ECECEC;
-  --Dark-Gray: #585858;
+  --Light-Gray: #DBDBDB;
+  --Dark-Gray: #585856;
 }
 
 /* Box sizing rules */
@@ -55,15 +65,9 @@ html:focus-within {
 body {
   font-family: 'Glory';
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
   line-height: 1;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+  letter-spacing: .5rem;
+  text-rendering: optimizeSpeed;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -108,14 +112,15 @@ select {
 .services,
 .portfolio,
 .contact {
-  padding: 7rem 1.3rem 0 1.3rem;
+  padding: 1.5rem 1.3rem;
 }
 
 @media screen and (min-width: 768px) {
   .home,
   .services,
   .portfolio,
-  .contact {
+  .contact,
+  .titles {
     padding: 241px 24px 0 24px;
   }
 }
@@ -124,7 +129,8 @@ select {
   .home,
   .services,
   .portfolio,
-  .contact {
+  .contact,
+  .titles {
     padding: 370px 0 0 0;
   }
 }
