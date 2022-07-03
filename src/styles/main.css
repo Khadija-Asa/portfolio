@@ -66,7 +66,6 @@ body {
   font-family: 'Glory';
   min-height: 100vh;
   line-height: 1;
-  letter-spacing: .5rem;
   text-rendering: optimizeSpeed;
 }
 
@@ -115,13 +114,12 @@ select {
   padding: 1.5rem 1.3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .home,
   .services,
   .portfolio,
-  .contact,
-  .titles {
-    padding: 241px 24px 0 24px;
+  .contact {
+    padding: 2rem 0 0 10rem;
   }
 }
 
@@ -129,8 +127,7 @@ select {
   .home,
   .services,
   .portfolio,
-  .contact,
-  .titles {
+  .contact {
     padding: 370px 0 0 0;
   }
 }

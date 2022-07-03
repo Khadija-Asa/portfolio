@@ -1,6 +1,8 @@
-/* Removing large size menu */
+/* Displaying the menu */
 @media screen and (max-width: 480px) {
-  .navbar {
+  .navbar,
+  .navbar-logo,
+  .navbar-links {
     display: none;
   }
 }
@@ -15,12 +17,12 @@
   position: relative;
 }
 
-.navbar-logo img {
+.navbar-mobile .navbar-logo img {
   width: 40px;
 }
 
 /* Mobile */
-.navbar-links {
+.navbar-mobile .navbar-links {
   bottom: 0;
   position: fixed;
   min-width: 100%;
@@ -32,11 +34,64 @@
   padding: 1rem 0;
 }
 
-.navbar-link {
+.navbar-mobile .navbar-link {
   align-items: center;
   display: flex;
 }
 
 .icon-tabler {
   color: var(--Green);
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar {
+    background-color: #F8F9FA;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 5rem;
+  }
+  .navbar-links img {
+    margin: 0 auto;
+    width: 3rem;
+  }
+  .navbar-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+  /* Icon */
+  .navbar .social-media .icon-tabler {
+    color: var(--Light-Gray);
+    width: 2rem;
+  }
+  /* Social media */
+  .navbar .social-media {
+    bottom: 10px;
+    position: fixed;
+  }
+  .navbar .social-media,
+  .navbar p {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .navbar .social-media h1 {
+    letter-spacing: .7rem;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+  }
 }
