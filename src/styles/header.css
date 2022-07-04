@@ -52,35 +52,57 @@
     background-color: #F8F9FA;
     bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    min-height: 100vh;
-    overflow: hidden;
-    padding: 1rem;
-    position: absolute;
+    padding-top: 1rem;
+    position: fixed;
     top: 0;
-    width: 5rem;
+    width: 4rem;
   }
   .navbar-links img {
     margin: 0 auto;
+    margin-bottom: 1rem;
     width: 3rem;
   }
   .navbar-links {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
     justify-content: center;
+  }
+  .navbar-link {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .1rem;
+    padding: .6rem .6rem;
+  }
+  /* Link hover & active */
+  .navbar-item:hover {
+    background: var(--Light-Gray);
+  }
+  .navbar-item .active {
+    background: var(--Light-Gray);
+    border-left: 15px solid var(--Green);
   }
   /* Icon */
   .navbar .social-media .icon-tabler {
-    color: var(--Light-Gray);
     width: 2rem;
+  }
+  .navbar-subtitle {
+    color: var(--Dark-Gray);
+    font-size: .75rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
   }
   /* Social media */
   .navbar .social-media {
-    bottom: 10px;
+    bottom: 1rem;
     position: fixed;
+    width: 4rem;
   }
-  .navbar .social-media,
+  .navbar .social-banner,
   .navbar p {
     align-items: center;
     display: flex;
@@ -88,10 +110,5 @@
     gap: 1rem;
     justify-content: center;
   }
-  .navbar .social-media h1 {
-    letter-spacing: .7rem;
-    text-transform: uppercase;
-    transform: rotate(180deg);
-    writing-mode: vertical-lr;
-  }
+  /* Social hover */
 }
